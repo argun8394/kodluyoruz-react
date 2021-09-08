@@ -1,4 +1,9 @@
 // Koşullu render işlemi
+//key prop
+//propTypes
+
+import PropTypes from "prop-types";
+
 
 function User({name, surname, isLoggedIn,age,friends/*props*/}){
     return(
@@ -9,6 +14,11 @@ function User({name, surname, isLoggedIn,age,friends/*props*/}){
      }
      </>);
 }
-
+User.propTypes ={
+    name:PropTypes.string,
+    surname:PropTypes.string,
+    isLoggedIn:PropTypes.bool,
+    age:PropTypes.number
+}
 
 export default User;
