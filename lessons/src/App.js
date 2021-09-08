@@ -13,7 +13,15 @@ function App() {
       <h1>Hello React World</h1>
 
       <Header/>
-      <User name="Argun" surname="Argun" isLoggedIn={true} age ={30} friends={["ahmet","mehmet","veli","taha","can"]}/>
+      <User name="Argun" 
+      surname="Argun" 
+      isLoggedIn={true} 
+      age ={30} 
+      friends={["ahmet","mehmet","veli","taha","can"]}
+      address={{title:"Ankara",
+      zip:6006
+    }}
+      />
       
 
     </div>
