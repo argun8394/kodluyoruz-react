@@ -18,7 +18,7 @@ User.propTypes ={
     name:PropTypes.string,
     surname:PropTypes.string,
     isLoggedIn:PropTypes.bool,
-    age:PropTypes.number
+    age:PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired/*oneOfType ile birden fazla veri tipi alabiliriz-----------------isRequired zorunluluk getirir*/
 }
 
 export default User;
