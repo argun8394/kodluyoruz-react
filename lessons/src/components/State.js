@@ -3,6 +3,7 @@ import {useState} from "react";
 function State() {
     const [name,setName]= useState("Ali");
     const [age,setAge]= useState("30");
+    const [friends,setFriends]= useState(["diego","rossi"])
 
 console.log(name,age);
 
@@ -13,6 +14,16 @@ console.log(name,age);
 
             <button onClick={()=>setName("Tahir")}>Change Name</button>
             <button onClick={()=>setAge("15")}>Change Age</button>
+
+            <hr/>
+
+            <h2>friends</h2>
+            {friends.map((friend,index)=>(
+                <div key={index}>{friend}</div>
+            ))}
+            <br/>
+            <button onClick={()=>setFriends(["luiz",...friends])}>Add new Friends</button> {/*başa ekler*/}
+            
         </div>
     );
     
