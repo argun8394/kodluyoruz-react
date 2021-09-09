@@ -23,7 +23,9 @@ console.log(name,age);
             ))}
             <br/>
             <button onClick={()=>setFriends(["luiz",...friends])}>Add new Friends</button> {/*başa ekler*/}
-            
+            <br/>
+            <button onClick={()=>setFriends([...friends,"luiz"])}>Add new Friends</button> {/*sona ekler*/}
+
         </div>
     );
     
