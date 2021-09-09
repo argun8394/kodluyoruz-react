@@ -4,6 +4,8 @@ function State() {
     const [name,setName]= useState("Ali");
     const [age,setAge]= useState("30");
 
+console.log(name,age);
+
     return(
         <div className="App">
             <h1>Merhaba {name}</h1>
