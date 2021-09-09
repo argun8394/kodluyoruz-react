@@ -22,7 +22,7 @@ User.propTypes ={
     surname:PropTypes.string,
     isLoggedIn:PropTypes.bool,
     age:PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,/*oneOfType ile birden fazla veri tipi alabiliriz-----------------isRequired zorunluluk getirir*/
-    address:PropTypes.shape({title: PropTypes.string, zip: PropTypes.number})
+    address:PropTypes.shape({title: PropTypes.string, zip: PropTypes.number})//shape objelerde kullanılır
     
 };
 

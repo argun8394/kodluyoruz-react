@@ -1,6 +1,7 @@
 import './App.css';
 
 import Header from './components/Header'
+import State from './components/State'
 import User from './components/User'
 
 const name = 'Ali';
@@ -23,7 +24,7 @@ function App() {
     }}
       />
       
-
+      <State/>
     </div>
   )
 }
